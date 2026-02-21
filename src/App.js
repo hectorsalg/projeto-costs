@@ -16,7 +16,7 @@ import "./index.css";
 export default function App() {
   return (
     <div className="App">
-      <Router basename="/projeto-cost">
+      <Router basename="/projeto-costs">
         <Navbar />
         <Container customClass="min-height">
           <Routes>
