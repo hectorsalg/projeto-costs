@@ -14,7 +14,7 @@ export default function NewProject() {
         project.cost = 0;
         project.services = [];
 
-        fetch('https://projeto-api-cost.vercel.app/projects', {
+        fetch('https://projeto-api-cost.onrender.com/projects', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -23,7 +23,6 @@ export default function NewProject() {
         })
         .then((resp) => resp.json())
         .then((data) => {
-            console.log(data)
             // redirect
             navigate('/projects', {state: { message: 'Projeto criado com sucesso!' }})
         })

@@ -24,7 +24,7 @@ export default function Project() {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch(`https://projeto-api-cost.vercel.app/projects/${id}`, {
+      fetch(`https://projeto-api-cost.onrender.com/projects/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export default function Project() {
       return false;
     }
 
-    fetch(`https://projeto-api-cost.vercel.app/projects/${project.id}`, {
+    fetch(`https://projeto-api-cost.onrender.com/projects/${project.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ export default function Project() {
 
     project.cost = newCost;
 
-    fetch(`https://projeto-api-cost.vercel.app/projects/${project.id}`, {
+    fetch(`https://projeto-api-cost.onrender.com/projects/${project.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -114,7 +114,7 @@ export default function Project() {
     projectUpdated.services = serviceUpdated;
     projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost);
 
-    fetch(`https://projeto-api-cost.vercel.app/projects/${projectUpdated.id}`, {
+    fetch(`https://projeto-api-cost.onrender.com/projects/${projectUpdated.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

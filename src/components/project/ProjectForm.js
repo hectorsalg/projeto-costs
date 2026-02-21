@@ -12,7 +12,7 @@ export default function ProjectForm({ handleSubmit, btnText, projectData }) {
     const [project, setProject] = useState(projectData || {});
 
     useEffect(() => {
-        fetch("https://projeto-api-cost.vercel.app/categories", {
+        fetch("https://projeto-api-cost.onrender.com/categories", {
         method: "GET",
         headers: {
             'Content-Type': 'application/json',
@@ -27,7 +27,6 @@ export default function ProjectForm({ handleSubmit, btnText, projectData }) {
 
     const submit = (e) => {
         e.preventDefault();
-        // console.log(project)
         handleSubmit(project)
     }
 

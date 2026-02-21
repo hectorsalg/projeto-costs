@@ -23,7 +23,7 @@ export default function Projects() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch('https://projeto-api-cost.vercel.app/projects', {
+            fetch('https://projeto-api-cost.onrender.com/projects', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -31,7 +31,6 @@ export default function Projects() {
         })
             .then((resp) => resp.json())
             .then((data) => {
-                console.log(data)
                 setProjects(data)
                 setRemoveLoading(true)
             })
@@ -41,7 +40,7 @@ export default function Projects() {
 
 
     function removeProject(id) {
-        fetch(`https://projeto-api-cost.vercel.app/projects/${id}`, {
+        fetch(`https://projeto-api-cost.onrender.com/projects/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
