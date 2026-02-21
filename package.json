@@ -1,7 +1,7 @@
 {
   "name": "projeto-cost",
   "version": "0.1.0",
-  "homepage": "https://hectorsalg.github.io/projeto-cost/",
+  "homepage": "https://hectorsalg.github.io/projeto-costs/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
