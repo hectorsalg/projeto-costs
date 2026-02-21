@@ -1,0 +1,16 @@
+.companyContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.companyContainer h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.companyContainer p {
+    margin-bottom: 1.5em;
+    color: #7b7b7b;
+}

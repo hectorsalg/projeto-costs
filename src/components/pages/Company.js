@@ -1,3 +1,12 @@
+import styles from './Company.module.css';
+
 export default function Company() {
-    return <h1>Company</h1>
+    return (
+        <>
+            <section className={styles.companyContainer}>
+            <h1>Empresa</h1>
+            <p>Empresa fictícia para organização de gastos em projetos.</p>
+            </section>
+        </>
+    )
 }
